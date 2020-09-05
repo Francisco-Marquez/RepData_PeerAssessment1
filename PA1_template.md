@@ -1,9 +1,8 @@
 ---
-title: 'Reproducible Research: Peer Assessment 1'
-output:
-  pdf_document: default
+title: "Reproducible Research: Peer Assessment 1"
+output: 
   html_document:
-    keep_md: yes
+    keep_md: true
 ---
 
 
@@ -24,5 +23,3 @@ output:
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
-
-1, 2,3, probando, probando.
