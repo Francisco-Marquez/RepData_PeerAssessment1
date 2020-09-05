@@ -8,11 +8,20 @@ output:
 
 
 ## Loading and preprocessing the data
-
+```{r}
+library(data.table)
+dt_data <- data.table(read.table(unz("activity.zip", "activity.csv"), header=T, quote="\"", sep=","))
+```
 
 
 ## What is mean total number of steps taken per day?
+```{r}
+aggregate(dt_data[, 1], list(dt_data$date), mean)
 
+
+# Codigo alternativo:
+# mean(dt_data[date=="2012-10-01",]$steps,na.rm = T)
+```
 
 
 ## What is the average daily activity pattern?
